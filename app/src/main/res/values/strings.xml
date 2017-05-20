@@ -37,4 +37,9 @@
         <item>@string/piso5</item>
     </string-array>
 
+    <string name="apartamentoguardado">Apartamento Guardado Exitosamente!</string>
+    <string name="errortamanno">Por favor diguite el Tamaño</string>
+    <string name="errorprecio">Por favor diguite el Precio</string>
+    <string name="errornomen">Por favor diguite la Momenclatura</string>
+
 </resources>

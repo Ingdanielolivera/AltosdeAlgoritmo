@@ -43,20 +43,24 @@ public class Registrar extends AppCompatActivity {
 
 
     public void guardar(View v) {
+
         String piso, balcon, sombra, tamanno, precio, nomenclatura;
         Apartamento a;
+
+        if (validar()) {
             //Piso
             piso = opcionesPiso.getSelectedItem().toString();
+            //validar que no se agregen mas de 3 apartamento por piso
 
             //balcon
             //Verifico si tiene balcon o no
-        if (rdBalconsi.isChecked()) balcon = getResources().getString(R.string.si);
-        else balcon = getResources().getString(R.string.no);
+            if (rdBalconsi.isChecked()) balcon = getResources().getString(R.string.si);
+            else balcon = getResources().getString(R.string.no);
 
-        //Sombra
+            //Sombra
             //Verifico si tiene sombra o no
-        if (rdSombrasi.isChecked()) sombra = getResources().getString(R.string.si);
-        else sombra = getResources().getString(R.string.no);
+            if (rdSombrasi.isChecked()) sombra = getResources().getString(R.string.si);
+            else sombra = getResources().getString(R.string.no);
 
             //EditText
             tamanno = cajaTamanno.getText().toString();
@@ -68,8 +72,49 @@ public class Registrar extends AppCompatActivity {
             a.guardar(getApplicationContext());
 
             new AlertDialog.Builder(this).setMessage("Apartamento Guardado Exitosamente!").setCancelable(true).show();
-           // limpiar();
-
+            limpiar();
+        }
     }
+
+
+    public void limpiar(){
+        rdBalconsi.setChecked(true);
+        rdBalconno.setChecked(false);
+        rdSombrasi.setChecked(true);
+        rdSombrano.setChecked(false);
+        cajaTamanno.setText("");
+        cajaPrecio.setText("");
+        cajaNomen.setText("");
+        cajaTamanno.requestFocus();
+    }
+
+
+    public boolean validar(){
+        if (cajaTamanno.getText().toString().isEmpty()) {
+            cajaTamanno.setError(getResources().getString(R.string.errortamanno));
+            cajaTamanno.requestFocus();
+            return false;
+        }if (cajaPrecio.getText().toString().isEmpty()){
+            cajaPrecio.setError(getResources().getString(R.string.errorprecio));
+            cajaPrecio.requestFocus();
+            return false;
+        }if (cajaNomen.getText().toString().isEmpty()) {
+            cajaNomen.setError(getResources().getString(R.string.errornomen));
+            cajaNomen.requestFocus();
+            return false;
+        }
+        return true;
+    }
+
+
+    public boolean validarpiso(){
+
+
+        return true;
+    }
+
+
+
+
 
 }
