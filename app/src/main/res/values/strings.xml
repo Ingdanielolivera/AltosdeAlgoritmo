@@ -28,6 +28,7 @@
     <string name="piso3">Piso 3</string>
     <string name="piso4">Piso 4</string>
     <string name="piso5">Piso 5</string>
+    <string name="numero">No.</string>
     <string-array name="pisos">
         <item>@string/piso1</item>
         <item>@string/piso2</item>
