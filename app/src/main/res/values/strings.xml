@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">AltosdeAlgoritmos</string>
+    <string name="registrar">Registrar</string>
+    <string name="nomenclatura">Nomenclatura</string>
+    <string name="piso">Piso</string>
+    <string name="balcon">Balcon</string>
+    <string name="sombra">Sombra</string>
+    <string name="tamanno">Tamaño</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="precio">Precio</string>
+    <string name="guardar">Guardar</string>
+    <string name="listar">Listar</string>
+    <string name="reporte1">Cuantos apartamentos se encuentran en la sombra y tienen balcon</string>
+    <string name="reporte2">Piso en el cual se encuentre el apartamento mas caro del edificio.</string>
+    <string name="reporte3">Nomenclatura y metros cuadrados del apartamento com mayor tamaño en todo el edificio.</string>
+    <string name="reporte4">Promedio de tamaño de los apartamentos por Piso</string>
+    <string-array name="opciones">
+        <item>@string/registrar</item>
+        <item>@string/listar</item>
+        <item>@string/reporte1</item>
+        <item>@string/reporte2</item>
+        <item>@string/reporte3</item>
+        <item>@string/reporte4</item>
+    </string-array>
 </resources>
