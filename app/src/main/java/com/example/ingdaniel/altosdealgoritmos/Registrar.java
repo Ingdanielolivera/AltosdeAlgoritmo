@@ -10,6 +10,8 @@ import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 
+import java.util.ArrayList;
+
 public class Registrar extends AppCompatActivity {
     private Spinner opcionesPiso;
     private String[] opc;
@@ -21,6 +23,7 @@ public class Registrar extends AppCompatActivity {
     private EditText cajaTamanno;
     private EditText cajaPrecio;
     private EditText cajaNomen;
+    private ArrayList<Apartamento> apartamentos;
 
 
     @Override
@@ -108,11 +111,15 @@ public class Registrar extends AppCompatActivity {
 
 
     public boolean validarpiso(){
+        String vpiso;
+        vpiso = opcionesPiso.getSelectedItem().toString();
+        apartamentos = Datos.traerPersonas(getApplicationContext());
+        for (int i = 0;i <apartamentos.size(); i++) {
 
+        }
 
         return true;
     }
-
 
 
 

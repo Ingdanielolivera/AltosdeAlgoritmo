@@ -11,6 +11,7 @@
     <string name="precio">Precio</string>
     <string name="guardar">Guardar</string>
     <string name="listar">Listar</string>
+    <string name="reportes">Reportes</string>
     <string name="reporte1">Cuantos apartamentos se encuentran en la sombra y tienen balcon</string>
     <string name="reporte2">Piso en el cual se encuentre el apartamento mas caro del edificio.</string>
     <string name="reporte3">Nomenclatura y metros cuadrados del apartamento com mayor tamaño en todo el edificio.</string>
@@ -18,10 +19,7 @@
     <string-array name="opciones">
         <item>@string/registrar</item>
         <item>@string/listar</item>
-        <item>@string/reporte1</item>
-        <item>@string/reporte2</item>
-        <item>@string/reporte3</item>
-        <item>@string/reporte4</item>
+        <item>@string/reportes</item>
     </string-array>
     <string name="piso1">Piso 1</string>
     <string name="piso2">Piso 2</string>
