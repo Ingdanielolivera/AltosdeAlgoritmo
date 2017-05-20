@@ -23,4 +23,17 @@
         <item>@string/reporte3</item>
         <item>@string/reporte4</item>
     </string-array>
+    <string name="piso1">Piso 1</string>
+    <string name="piso2">Piso 2</string>
+    <string name="piso3">Piso 3</string>
+    <string name="piso4">Piso 4</string>
+    <string name="piso5">Piso 5</string>
+    <string-array name="pisos">
+        <item>@string/piso1</item>
+        <item>@string/piso2</item>
+        <item>@string/piso3</item>
+        <item>@string/piso4</item>
+        <item>@string/piso5</item>
+    </string-array>
+
 </resources>

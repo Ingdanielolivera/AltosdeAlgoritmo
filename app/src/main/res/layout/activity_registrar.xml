@@ -23,11 +23,10 @@
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView"
+                android:text="@string/registrar"
                 android:textAlignment="center"
                 android:textSize="24sp"
                 android:textStyle="bold"
-                tools:text="@string/registrar"
                 tools:ignore="HardcodedText" />
 
             <TextView
@@ -39,7 +38,7 @@
                 android:textStyle="bold" />
 
             <Spinner
-                android:id="@+id/dbpiso"
+                android:id="@+id/oppiso"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -61,6 +60,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:checked="true"
                     android:text="@string/si" />
 
                 <RadioButton
@@ -89,6 +89,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:checked="true"
                     android:text="@string/si" />
 
                 <RadioButton
@@ -108,7 +109,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editText4"
+                android:id="@+id/txttamanno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -132,10 +133,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView"
+                android:text="@string/nomenclatura"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                tools:text="@string/nomenclatura"
                 tools:ignore="HardcodedText" />
 
             <EditText
@@ -149,6 +149,7 @@
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="guardar"
                 android:text="@string/guardar" />
 
         </LinearLayout>
