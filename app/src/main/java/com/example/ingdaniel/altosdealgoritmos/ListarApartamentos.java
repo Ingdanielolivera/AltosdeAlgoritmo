@@ -18,7 +18,7 @@ public class ListarApartamentos extends AppCompatActivity {
         setContentView(R.layout.activity_listar_apartamentos);
 
         tabla=(TableLayout)findViewById(R.id.tblPersonas);
-        apartamentos = Datos.traerPersonas(getApplicationContext());
+        apartamentos = Datos.traerApartamentos(getApplicationContext());
 
         for (int i = 0;i <apartamentos.size(); i++){
             TableRow fila = new TableRow(this);
@@ -34,8 +34,8 @@ public class ListarApartamentos extends AppCompatActivity {
             c2.setText(apartamentos.get(i).getPiso()+"  ");
             c3.setText(apartamentos.get(i).getBalcon()+"  ");
             c4.setText(apartamentos.get(i).getSombra()+"  ");
-            c5.setText(apartamentos.get(i).getTamanno()+"  ");
-            c6.setText(apartamentos.get(i).getPrecio()+"  ");
+            c5.setText(apartamentos.get(i).getTamanno()+"mt2 ");
+            c6.setText("$"+apartamentos.get(i).getPrecio()+"  ");
             c7.setText(apartamentos.get(i).getNomen()+"  ");
 
             fila.addView(c1);

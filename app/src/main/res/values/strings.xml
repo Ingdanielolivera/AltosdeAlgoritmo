@@ -48,4 +48,12 @@
     <string name="napartamentos">No. de Apartamentos: </string>
     <string name="mastamano">Datos del Apartamento con mayor tamaño: </string>
     <string name="mayorpre">Datos del Apartamento con mayor valor: </string>
+    <string name="erropiso">Nose pueden agregar mas de 3 apartamentos por piso</string>
+    <string name="erropisor">Nose puede agregar nomenclaturas repetidas</string>
+    <string name="promediototal">Promedio  por piso</string>
+    <string name="promedio1">Primer piso</string>
+    <string name="promedio2">Segundo piso</string>
+    <string name="promedio3">Tercer piso</string>
+    <string name="promedio4">Cuarto piso</string>
+    <string name="promedio5">Quinto piso</string>
 </resources>

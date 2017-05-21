@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -51,31 +52,33 @@ public class Registrar extends AppCompatActivity {
         Apartamento a;
 
         if (validar()) {
-            //Piso
-            piso = opcionesPiso.getSelectedItem().toString();
-            //validar que no se agregen mas de 3 apartamento por piso
+            if (validarCantidad()) {
+                //Piso
+                piso = opcionesPiso.getSelectedItem().toString();
+                //validar que no se agregen mas de 3 apartamento por piso
 
-            //balcon
-            //Verifico si tiene balcon o no
-            if (rdBalconsi.isChecked()) balcon = getResources().getString(R.string.si);
-            else balcon = getResources().getString(R.string.no);
+                //balcon
+                //Verifico si tiene balcon o no
+                if (rdBalconsi.isChecked()) balcon = getResources().getString(R.string.si);
+                else balcon = getResources().getString(R.string.no);
 
-            //Sombra
-            //Verifico si tiene sombra o no
-            if (rdSombrasi.isChecked()) sombra = getResources().getString(R.string.si);
-            else sombra = getResources().getString(R.string.no);
+                //Sombra
+                //Verifico si tiene sombra o no
+                if (rdSombrasi.isChecked()) sombra = getResources().getString(R.string.si);
+                else sombra = getResources().getString(R.string.no);
 
-            //EditText
-            tamanno = cajaTamanno.getText().toString();
-            precio = cajaPrecio.getText().toString();
-            nomenclatura = cajaNomen.getText().toString();
+                //EditText
+                tamanno = cajaTamanno.getText().toString();
+                precio = cajaPrecio.getText().toString();
+                nomenclatura = cajaNomen.getText().toString();
 
 
-            a = new Apartamento(piso, balcon, sombra, tamanno, precio, nomenclatura);
-            a.guardar(getApplicationContext());
+                a = new Apartamento(piso, balcon, sombra, tamanno, precio, nomenclatura);
+                a.guardar(getApplicationContext());
 
-            new AlertDialog.Builder(this).setMessage(getResources().getString(R.string.apartamentoguardado)).setCancelable(true).show();
-            limpiar();
+                new AlertDialog.Builder(this).setMessage(getResources().getString(R.string.apartamentoguardado)).setCancelable(true).show();
+                limpiar();
+            }
         }
     }
 
@@ -109,19 +112,26 @@ public class Registrar extends AppCompatActivity {
         return true;
     }
 
-
-    public boolean validarpiso(){
-        String vpiso;
-        vpiso = opcionesPiso.getSelectedItem().toString();
-        apartamentos = Datos.traerPersonas(getApplicationContext());
-        for (int i = 0;i <apartamentos.size(); i++) {
-
+    public boolean validarCantidad(){
+        ArrayList<Apartamento> apto=Datos.traerApartamentos(getApplicationContext());
+        String piso=opcionesPiso.getSelectedItem().toString();
+        String nome=cajaNomen.getText().toString(),nomen="";
+        int cont=0;
+        for (int i=0;i<apto.size();i++){
+            if (apto.get(i).getPiso().equals(piso))cont=cont+1;
+            nomen = apto.get(i).getNomen();
+        }if(nome.equals(nomen)){
+            Toast.makeText(getApplicationContext(),getResources().getString(R.string.erropisor),
+                    Toast.LENGTH_SHORT).show();
+            return false;
         }
-
+        if (cont>=3){
+            Toast.makeText(getApplicationContext(),getResources().getString(R.string.erropiso),
+                    Toast.LENGTH_SHORT).show();
+            return false;
+        }
         return true;
     }
-
-
 
 
 }
