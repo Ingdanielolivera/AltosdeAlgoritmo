@@ -36,6 +36,9 @@ public class Principal extends AppCompatActivity {
                         i = new Intent(Principal.this,ListarApartamentos.class);
                         startActivity(i);
                         break;
+                    case 2:
+                        i = new Intent(Principal.this,Reportes.class);
+                        startActivity(i);
 
                 }
             }

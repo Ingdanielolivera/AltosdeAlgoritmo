@@ -14,12 +14,18 @@
     <string name="reportes">Reportes</string>
     <string name="reporte1">Cuantos apartamentos se encuentran en la sombra y tienen balcon</string>
     <string name="reporte2">Piso en el cual se encuentre el apartamento mas caro del edificio.</string>
-    <string name="reporte3">Nomenclatura y metros cuadrados del apartamento com mayor tamaño en todo el edificio.</string>
+    <string name="reporte3">Nomenclatura y metros cuadrados del apartamento con mayor tamaño en todo el edificio.</string>
     <string name="reporte4">Promedio de tamaño de los apartamentos por Piso</string>
     <string-array name="opciones">
         <item>@string/registrar</item>
         <item>@string/listar</item>
         <item>@string/reportes</item>
+    </string-array>
+    <string-array name="opcionesR">
+        <item>@string/reporte1</item>
+        <item>@string/reporte2</item>
+        <item>@string/reporte3</item>
+        <item>@string/reporte4</item>
     </string-array>
     <string name="piso1">Piso 1</string>
     <string name="piso2">Piso 2</string>
@@ -34,10 +40,12 @@
         <item>@string/piso4</item>
         <item>@string/piso5</item>
     </string-array>
-
     <string name="apartamentoguardado">Apartamento Guardado Exitosamente!</string>
     <string name="errortamanno">Por favor diguite el Tamaño</string>
     <string name="errorprecio">Por favor diguite el Precio</string>
     <string name="errornomen">Por favor diguite la Momenclatura</string>
-
+    <string name="sombraybalcon">Apartamentos con sombra y balcon </string>
+    <string name="napartamentos">No. de Apartamentos: </string>
+    <string name="mastamano">Datos del Apartamento con mayor tamaño: </string>
+    <string name="mayorpre">Datos del Apartamento con mayor valor: </string>
 </resources>

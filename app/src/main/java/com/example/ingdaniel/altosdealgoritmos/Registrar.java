@@ -74,7 +74,7 @@ public class Registrar extends AppCompatActivity {
             a = new Apartamento(piso, balcon, sombra, tamanno, precio, nomenclatura);
             a.guardar(getApplicationContext());
 
-            new AlertDialog.Builder(this).setMessage("Apartamento Guardado Exitosamente!").setCancelable(true).show();
+            new AlertDialog.Builder(this).setMessage(getResources().getString(R.string.apartamentoguardado)).setCancelable(true).show();
             limpiar();
         }
     }
