@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AltosdeAlgoritmos</string>
+    <string name="apartamentoguardado">Apartment Guarded Successfully!</string>
+    <string name="balcon">Balcony</string>
+    <string name="erropiso">No You can add more than 3 apartments per floor</string>
+    <string name="erropisor">Can not add repeated nomenclatures</string>
+    <string name="errornomen">Please enter the Nomenclature</string>
+    <string name="errorprecio">Please enter Price</string>
+    <string name="errortamanno">Please enter the Size</string>
+    <string name="guardar">Save</string>
+    <string name="listar">To list</string>
+    <string name="mastamano">Largest Department Data:</string>
+    <string name="mayorpre">Details of the Apartment with the highest value:</string>
+    <string name="no">Do not</string>
+    <string name="napartamentos">Number of Apartment:</string>
+    <string name="nomenclatura">Nomenclature</string>
+    <string name="numero">No.</string>
+    <string name="piso">Floor</string>
+    <string name="piso1">Floor 1</string>
+    <string name="piso2">Floor 2</string>
+    <string name="piso3">Floor 3</string>
+    <string name="piso4">Floor 4</string>
+    <string name="piso5">Floor 5</string>
+    <string name="precio">Price</string>
+    <string name="promedio1">First floor</string>
+    <string name="promedio2">Second floor</string>
+    <string name="promedio3">Third floor</string>
+    <string name="promedio4">Fourth floor</string>
+    <string name="promedio5">Fifth floor</string>
+    <string name="promediototal">Average per floor</string>
+    <string name="registrar">to register</string>
+    <string name="reporte1">How many apartments are in the shade and have a balcony</string>
+    <string name="reporte2">Floor in which is the most expensive apartment in the building.</string>
+    <string name="reporte3">Nomenclature and square meters of the larger apartment in the whole building.</string>
+    <string name="reporte4">Average size of apartments per floor</string>
+    <string name="reportes">Reports</string>
+    <string name="si">Yes</string>
+    <string name="sombra">Shadow</string>
+    <string name="sombraybalcon">Apartments with shade and balcony</string>
+    <string name="tamanno">Size</string>
+</resources>

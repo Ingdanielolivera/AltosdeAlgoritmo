@@ -3,7 +3,7 @@
     <string name="registrar">Registrar</string>
     <string name="nomenclatura">Nomenclatura</string>
     <string name="piso">Piso</string>
-    <string name="balcon">Balcon</string>
+    <string name="balcon">Balcón</string>
     <string name="sombra">Sombra</string>
     <string name="tamanno">Tamaño</string>
     <string name="si">Si</string>
@@ -12,7 +12,7 @@
     <string name="guardar">Guardar</string>
     <string name="listar">Listar</string>
     <string name="reportes">Reportes</string>
-    <string name="reporte1">Cuantos apartamentos se encuentran en la sombra y tienen balcon</string>
+    <string name="reporte1">Cuantos apartamentos se encuentran en la sombra y tienen balcón</string>
     <string name="reporte2">Piso en el cual se encuentre el apartamento mas caro del edificio.</string>
     <string name="reporte3">Nomenclatura y metros cuadrados del apartamento con mayor tamaño en todo el edificio.</string>
     <string name="reporte4">Promedio de tamaño de los apartamentos por Piso</string>
@@ -41,19 +41,19 @@
         <item>@string/piso5</item>
     </string-array>
     <string name="apartamentoguardado">Apartamento Guardado Exitosamente!</string>
-    <string name="errortamanno">Por favor diguite el Tamaño</string>
-    <string name="errorprecio">Por favor diguite el Precio</string>
-    <string name="errornomen">Por favor diguite la Momenclatura</string>
-    <string name="sombraybalcon">Apartamentos con sombra y balcon </string>
-    <string name="napartamentos">No. de Apartamentos: </string>
+    <string name="errortamanno">Por favor digite el Tamaño</string>
+    <string name="errorprecio">Por favor digite el Precio</string>
+    <string name="errornomen">Por favor digite la Nomenclatura</string>
+    <string name="sombraybalcon">Apartamentos con sombra y balcón</string>
     <string name="mastamano">Datos del Apartamento con mayor tamaño: </string>
     <string name="mayorpre">Datos del Apartamento con mayor valor: </string>
-    <string name="erropiso">Nose pueden agregar mas de 3 apartamentos por piso</string>
-    <string name="erropisor">Nose puede agregar nomenclaturas repetidas</string>
+    <string name="erropiso">No se pueden agregar mas de 3 apartamentos por piso</string>
+    <string name="erropisor">No se puede agregar nomenclaturas repetidas</string>
     <string name="promediototal">Promedio  por piso</string>
     <string name="promedio1">Primer piso</string>
     <string name="promedio2">Segundo piso</string>
     <string name="promedio3">Tercer piso</string>
     <string name="promedio4">Cuarto piso</string>
     <string name="promedio5">Quinto piso</string>
+    <string name="napartamentos">No. de Apartamentos:</string>
 </resources>
